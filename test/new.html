@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azerbaijani Flag with Star</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center the content vertically */
+            background-color: #f0f0f0; /* Light background for visibility */
+        }
+
+        section {
+            width: 900px;
+            height: 450px;
+            margin: auto;
+        }
+
+        #blue_sctn {
+            background-color: #0097c3;
+            width: 100%;
+            height: 150px; /* 1/3 of total height */
+        }
+
+        #red_sctn {
+            background-color: #e00034;
+            width: 100%;
+            height: 150px; /* 1/3 of total height */
+            position: relative; /* Enable absolute positioning for the star */
+        }
+
+        #green_sctn {
+            background-color: #00ae65;
+            width: 100%;
+            height: 150px; /* 1/3 of total height */
+        }
+
+        #star {
+            position: absolute;
+            top: 50%; /* Center the star vertically */
+            left: 50%; /* Center the star horizontally */
+            transform: translate(-50%, -50%); /* Adjust for star's size */
+            width: 75px; /* Adjust star width */
+            height: 75px; /* Adjust star height */
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent; /* Adjust triangle size */
+            border-right: 15px solid transparent; /* Adjust triangle size */
+            border-bottom: 30px solid #fff; /* Adjust triangle size */
+            position: absolute;
+            transform-origin: 50% 100%;
+        }
+
+        /* Define the rotations for each triangle */
+        #triangle2 {
+            transform: rotate(45deg);
+        }
+        #triangle3 {
+            transform: rotate(90deg);
+        }
+        #triangle4 {
+            transform: rotate(135deg);
+        }
+        #triangle5 {
+            transform: rotate(180deg);
+        }
+        #triangle6 {
+            transform: rotate(225deg);
+        }
+        #triangle7 {
+            transform: rotate(270deg);
+        }
+        #triangle8 {
+            transform: rotate(315deg);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div id="blue_sctn"></div>
+        <div id="red_sctn">
+            <section id="star">
+                <div class="triangle"></div>
+                <div class="triangle" id="triangle2"></div>
+                <div class="triangle" id="triangle3"></div>
+                <div class="triangle" id="triangle4"></div>
+                <div class="triangle" id="triangle5"></div>
+                <div class="triangle" id="triangle6"></div>
+                <div class="triangle" id="triangle7"></div>
+                <div class="triangle" id="triangle8"></div>
+            </section>
+        </div>
+        <div id="green_sctn"></div>
+    </section>
+</body>
+</html>

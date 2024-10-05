@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Pointed Star</title>
+    <style>
+        #star {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px auto;
+        }
+        
+        .triangle {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            position: absolute;
+            transform-origin: 50% 100%; 
+        }
+
+        #triangle2 {
+            transform: rotate(45deg);
+        }
+        #triangle3 {
+            transform: rotate(90deg);
+        }
+        #triangle4 {
+            transform: rotate(135deg);
+        }
+        #triangle5 {
+            transform: rotate(180deg);
+        }
+        #triangle6 {
+            transform: rotate(225deg);
+        }
+        #triangle7 {
+            transform: rotate(270deg);
+        }
+        #triangle8 {
+            transform: rotate(315deg);
+        }
+
+        .triangle {
+            top: 25%;
+            left: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="star">
+        <div class="triangle"></div>
+        <div class="triangle" id="triangle2"></div>
+        <div class="triangle" id="triangle3"></div>
+        <div class="triangle" id="triangle4"></div>
+        <div class="triangle" id="triangle5"></div>
+        <div class="triangle" id="triangle6"></div>
+        <div class="triangle" id="triangle7"></div>
+        <div class="triangle" id="triangle8"></div>
+    </section>
+</body>
+</html>
